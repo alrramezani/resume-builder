@@ -12,7 +12,8 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['var(--font-inter)'],
-        resume:['var(--font-open-sans)']
+        resume:['var(--font-open-sans)'],
+        grotesk:['var(--font-space-grotesk)'],
       },
     },
   },
