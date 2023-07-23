@@ -1,0 +1,30 @@
+@page {
+  size: A4;
+  margin-top: 19mm;
+  margin-bottom: 36.7mm;
+  margin-left: 19mm;
+  margin-right: 13.2mm;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  page-break-after: avoid;
+}
+
+table,
+figure {
+  page-break-inside: avoid;
+}
+footer {
+  display: none !important;
+}
+@media print {
+  #print-button {
+    display: none !important;
+  }
+  footer {
+    display: none !important;
+  }
+}

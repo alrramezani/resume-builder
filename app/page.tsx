@@ -1,12 +1,16 @@
+"use client";
+
 import Header from "@/components/header";
 import { TbForms, TbFileImport } from "react-icons/tb";
+
 export default function Home() {
   const cardStyle =
     "w-full md:w-[35%] cursor-pointer rounded-lg font-grotesk border border-gray-400 py-6 md:py-16 px-6 transition-all hover:bg-gray-100 text-center";
   return (
     <main className="">
       <Header title="Free Resume Builder" progress={0} />
-      <div className="container px-4">
+      <iframe src="/resume"></iframe>
+      <div id="pp" className="container px-4">
         <div className=" pt-16 text-center">
           <h1 className=" font-grotesk mb-4 text-2xl md:text-4xl">
             Create a Professional Resume
