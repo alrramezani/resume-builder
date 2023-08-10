@@ -35,7 +35,7 @@ export default function RootLayout({
         className={`${inter.variable} ${open_sans.variable} ${space_grotesk.variable}`}
       >
         {children}
-        <footer className=" bg-black py-8 text-white w-full fixed bottom-0 text-sm">
+        <footer className=" bg-black py-8 text-white w-full text-sm">
           <div className=" container px-4">Created with &#9829;</div>
         </footer>
       </body>

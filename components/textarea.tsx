@@ -26,7 +26,7 @@ const Textarea = ({
       ) : null}
       <div className="w-full relative">
         <textarea
-          className=" rounded border border-gray-300 px-2 py-3 w-full h-32 resize-none leading-7"
+          className=" rounded border border-gray-300 px-3 py-2 w-full h-32 resize-none leading-6"
           name={name}
           onChange={onChange}
           value={value}

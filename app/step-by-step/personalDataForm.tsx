@@ -1,6 +1,6 @@
 import { useState, useEffect, useLayoutEffect } from "react";
 import Input from "@/components/input";
-import Textarea from "@/components/textarea";
+import Wysiwyg from "@/components/wysiwyg";
 export interface IPersonalData {
   firstname?: string;
   lastname?: string;
@@ -25,8 +25,8 @@ export default function PersonalDataForm() {
   //   // flyData(formData);
   // }, [formData]);
   return (
-    <div className="flex flex-wrap justify-between gap-4">
-      <div className="w-1/2">
+    <div className="flex flex-wrap justify-between">
+      <div className="w-1/2 pr-4 mb-4">
         <Input
           name="firstname"
           value={formData?.firstname || ""}
@@ -35,7 +35,7 @@ export default function PersonalDataForm() {
           onChange={handleChange}
         />
       </div>
-      <div className="w-1/2">
+      <div className="w-1/2 pr-4 mb-4">
         <Input
           name="lastname"
           value={formData.lastname || ""}
@@ -44,7 +44,7 @@ export default function PersonalDataForm() {
           onChange={handleChange}
         />
       </div>
-      <div className="w-1/2">
+      <div className="w-1/2 pr-4 mb-4">
         <Input
           name="jobTitle"
           value={formData.jobTitle || ""}
@@ -53,7 +53,7 @@ export default function PersonalDataForm() {
           onChange={handleChange}
         />
       </div>
-      <div className="w-1/2">
+      <div className="w-1/2 pr-4 mb-4">
         <Input
           name="location"
           value={formData.location || ""}
@@ -62,7 +62,7 @@ export default function PersonalDataForm() {
           onChange={handleChange}
         />
       </div>
-      <div className="w-1/2">
+      <div className="w-1/2 pr-4 mb-4">
         <Input
           name="email"
           value={formData.email || ""}
@@ -71,7 +71,7 @@ export default function PersonalDataForm() {
           onChange={handleChange}
         />
       </div>
-      <div className="w-1/2">
+      <div className="w-1/2 pr-4 mb-4">
         <Input
           name="phone"
           value={formData.phone || ""}
@@ -80,7 +80,7 @@ export default function PersonalDataForm() {
           onChange={handleChange}
         />
       </div>
-      <div className="w-1/3">
+      <div className="w-1/3 pr-4 mb-4">
         <Input
           name="linkedin"
           value={formData.linkedin || ""}
@@ -89,7 +89,7 @@ export default function PersonalDataForm() {
           onChange={handleChange}
         />
       </div>
-      <div className="w-1/3">
+      <div className="w-1/3 pr-4 mb-4">
         <Input
           name="github"
           value={formData.github || ""}
@@ -98,7 +98,7 @@ export default function PersonalDataForm() {
           onChange={handleChange}
         />
       </div>
-      <div className="w-1/3">
+      <div className="w-1/3 pr-4 mb-4">
         <Input
           name="website"
           value={formData.website || ""}
@@ -107,15 +107,17 @@ export default function PersonalDataForm() {
           onChange={handleChange}
         />
       </div>
-      <Textarea
-        name="summary"
-        label="Professional Summary"
-        notice="Mention your role, experience & most importantly - your biggest
+      <div className="w-full pr-4 mb-4">
+        <Wysiwyg
+          name="summary"
+          label="Professional Summary"
+          notice="Mention your role, experience & most importantly - your biggest
         achievements, best qualities and skills."
-        value={formData.summary || ""}
-        placeholder="e.g. Hardworking College Student seeking employment. Bringing forth a motivated attitude and a variety of powerful skills..."
-        onChange={handleChange}
-      />
+          value={formData.summary || ""}
+          placeholder="e.g. Hardworking College Student seeking employment. Bringing forth a motivated attitude and a variety of powerful skills..."
+          onChange={handleChange}
+        />
+      </div>
     </div>
   );
 }

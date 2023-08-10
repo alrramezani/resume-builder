@@ -25,7 +25,7 @@ const Input = (props: IInputProps) => {
       <div className="w-full relative">
         {props.icon}
         <input
-          className=" rounded border border-gray-300 px-2 py-3 w-full leading-7 placeholder:text-gray-600 placeholder:opacity-50 disabled:cursor-not-allowed"
+          className=" rounded border border-gray-300 px-3 py-2 w-full leading-6 placeholder:text-gray-600 placeholder:opacity-50 disabled:cursor-not-allowed"
           type={props.type ? props.type : "text"}
           inputMode={props.type ? modes[props.type] : "text"}
           name={props.name}
