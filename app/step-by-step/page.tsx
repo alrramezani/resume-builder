@@ -5,16 +5,17 @@ import Senobar from "@/components/resume_templates/senobar";
 
 import PersonalDataForm from "./personalDataForm";
 import WorkHistoryForm from "./workHistoryFrom";
+import EducationForm from "./educatonForm";
 export default function Home() {
-  const [step, setStep] = useState("workHistory");
+  const [step, setStep] = useState("education");
   const stepView = () => {
     switch (step) {
       case "personalData":
         return <PersonalDataForm />;
-        case "workHistory":
-          return <WorkHistoryForm/>;
-      //   case "education":
-      //     return <EducationForm />;
+      case "workHistory":
+        return <WorkHistoryForm />;
+      case "education":
+        return <EducationForm />;
       default:
         return null;
     }

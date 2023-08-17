@@ -21,9 +21,6 @@ export default function PersonalDataForm() {
       return { ...data, [e.target.name]: e.target.value };
     });
   };
-  // useEffect(() => {
-  //   // flyData(formData);
-  // }, [formData]);
   return (
     <div className="flex flex-wrap justify-between">
       <div className="w-1/2 pr-4 mb-4">
