@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <main className="">
       <Header title="Free Resume Builder" progress={0} />
-      <iframe src="/resume"></iframe>
-      <div id="pp" className="container px-4">
+
+      <div className="container px-4">
         <div className=" pt-16 text-center">
           <h1 className=" font-grotesk mb-4 text-2xl md:text-4xl">
             Create a Professional Resume

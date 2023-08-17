@@ -28,7 +28,7 @@ const Wysiwyg = ({
       ) : null}
       <div>
         <ReactQuill
-          className=" h-44 rounded"
+          className=" h-44 rounded mb-11"
           theme="snow"
           value={value}
           placeholder={placeholder}

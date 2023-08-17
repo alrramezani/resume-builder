@@ -15,9 +15,9 @@ export interface IPersonalData {
 }
 
 export default function PersonalDataForm() {
-  const [formData, setFromData] = useState<IPersonalData>({});
+  const [formData, setFormData] = useState<IPersonalData>({});
   const handleChange = (e: any) => {
-    setFromData((data) => {
+    setFormData((data) => {
       return { ...data, [e.target.name]: e.target.value };
     });
   };
