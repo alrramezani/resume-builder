@@ -1,3 +1,4 @@
+"use client"
 import { useState, useEffect, useRef } from "react";
 import { IoCalendarClearOutline, IoBan } from "react-icons/io5";
 interface IDatePickerProps {

@@ -22,7 +22,7 @@ const Wysiwyg = ({
 }: IWysiwygProps) => {
   return (
     <div className="w-full">
-      {label ? <label className="text-sm text-gray-600">{label}</label> : null}
+      {/* {label ? <label className="text-sm text-gray-600">{label}</label> : null}
       {notice ? (
         <span className="text-xs text-gray-600 block mb-2">{notice}</span>
       ) : null}
@@ -36,7 +36,7 @@ const Wysiwyg = ({
             onChange({ target: { value: data, name: name } });
           }}
         />
-      </div>
+      </div> */}
     </div>
   );
 };

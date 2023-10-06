@@ -1,4 +1,5 @@
-import { useState, useEffect, useLayoutEffect } from "react";
+'use client'
+import { useState} from "react";
 import Input from "@/components/input";
 import Wysiwyg from "@/components/wysiwyg";
 export interface IPersonalData {
