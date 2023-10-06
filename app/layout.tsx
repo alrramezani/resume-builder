@@ -39,6 +39,7 @@ export default function RootLayout({
           <div className=" container px-4">Created with &#9829;</div>
         </footer>
       </body>
+      <script async data-id="101429109" src="//static.getclicky.com/js" />
     </html>
   );
 }
